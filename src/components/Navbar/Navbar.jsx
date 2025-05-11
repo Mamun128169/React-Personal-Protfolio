@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="navbar bg-transparent pt-5">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -43,11 +43,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <a className="btn btn-ghost text-lg md:text-xl">
             <img src={logo} alt="logo.svg" />
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Home</a>
@@ -67,7 +67,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="bg-gradient-custom px-6 py-2 rounded-3xl font-semibold cursor-pointer hover:scale-105 transition-5">
+          <a className="gradient-btn hover:scale-105 transition-5">
             Connect With Me
           </a>
         </div>

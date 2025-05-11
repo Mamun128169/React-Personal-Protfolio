@@ -1,15 +1,19 @@
+/* postcss */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* outfit font */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  font-family: "Outfit", sans-serif;
+}
 
 html,
 body {
   height: 100%;
-  background: black;
-  font-family: 'Outfit', sans-serif;
+  background: #212121;
 }
 
 .bg-gradient-custom {
@@ -22,4 +26,8 @@ body {
 
 .transition-5 {
   transition: all 0.5s;
+}
+
+.gradient-btn {
+  @apply bg-gradient-custom text-sm md:text-base px-3 md:px-6 py-2 rounded-3xl font-semibold cursor-pointer;
 }
