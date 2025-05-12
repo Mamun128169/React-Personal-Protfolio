@@ -1,10 +1,10 @@
-import Hero from './components/HeroSection/Hero'
-import About from './components/main/About'
-import Navbar from './components/Navbar/Navbar'
+import Hero from "./components/HeroSection/Hero";
+import About from "./components/main/About";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#212121] text white min-h-screen">
       {/* header */}
       <header className="container mx-auto">
         <Navbar />
@@ -16,7 +16,7 @@ function App() {
         <About />
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

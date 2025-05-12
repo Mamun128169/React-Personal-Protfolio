@@ -13,6 +13,7 @@
 html,
 body {
   height: 100%;
+  font-color: white;
   background: #212121;
 }
 
@@ -30,4 +31,24 @@ body {
 
 .gradient-btn {
   @apply bg-gradient-custom text-sm md:text-base px-3 md:px-6 py-2 rounded-3xl font-semibold cursor-pointer;
+}
+
+.progress-bar {
+  height: 6px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    270deg,
+    rgb(255, 130, 13) 10%,
+    rgb(205, 32, 205) 70%
+  );
+}
+
+.skill-title {
+  max-width: 120px;
+  font-weight: 600;
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-800;
 }

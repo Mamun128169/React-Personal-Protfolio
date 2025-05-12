@@ -1,4 +1,4 @@
-import profile from '../../assets/profile_img.svg'
+import profile from "../../assets/profile_img.svg";
 
 const Hero = () => {
   return (
@@ -11,9 +11,7 @@ const Hero = () => {
           />
           <div className="space-y-1 md:space-y-3 px-6">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.75]">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-yellow-600">
-                I'm Alex Bennett,{' '}
-              </span>
+              <span className="text-gradient">I'm Alex Bennett, </span>
               frontend developer based in USA.
             </h1>
             <p className="py-6 text-sm md:text-base lg:text-lg px-4 md:px-24 ">
@@ -32,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
