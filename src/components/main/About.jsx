@@ -59,17 +59,17 @@ const About = () => {
       </div>
 
       {/* works */}
-      <div className="flex items-center gap-8 md:gap-24 lg:gap-48 text-center mb-[50px] uppercase text-lg md:xl lg:2xl font-bold">
+      <div className="flex items-center gap-8 md:gap-24 lg:gap-48 text-center mb-[50px] uppercase text-base md:xl lg:2xl font-bold">
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg md:text-4xl text-gradient font-bold">10+</h2>
+          <h2 className="text-2xl md:text-4xl text-gradient font-bold">10+</h2>
           <h4>years of experience</h4>
         </div>
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg md:text-4xl text-gradient font-bold">90+</h2>
+          <h2 className="text-2xl md:text-4xl text-gradient font-bold">90+</h2>
           <h4>projects completed</h4>
         </div>
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg md:text-4xl text-gradient font-bold">15+</h2>
+          <h2 className="text-2xl md:text-4xl text-gradient font-bold">15+</h2>
           <h4>Happy clients</h4>
         </div>
       </div>
