@@ -7,6 +7,7 @@ import Services from "./components/main/Services";
 import LatestWork from "./components/main/LatestWork";
 import works_data from "./assets/mywork_data";
 import Connect from "./components/main/Connect";
+import Footer from "./components/main/Footer";
 
 function App() {
   const [services, setServices] = useState([]);
@@ -23,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#212121] text white min-h-screen pb-[50px]">
+    <div className="bg-[#0F0F0F] text white min-h-screen pb-[50px]">
       {/* header */}
       <header className="container mx-auto">
         <Navbar />
@@ -39,6 +40,8 @@ function App() {
         <LatestWork works={works} />
         {/* get in touch section */}
         <Connect />
+        {/* footer section */}
+        <Footer />
       </main>
     </div>
   );

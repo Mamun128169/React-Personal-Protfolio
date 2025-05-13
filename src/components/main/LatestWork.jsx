@@ -2,7 +2,7 @@ import pattern from "../../assets/theme_pattern.svg";
 import Work from "./work";
 
 const LatestWork = ({ works }) => {
-  console.log(works);
+  // console.log(works);
   return (
     <div className="mt-[120px]">
       {/* latest work title */}
