@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#0F0F0F] text white min-h-screen pb-[50px]">
+    <div className="bg-[#0F0F0F] text-white min-h-screen pb-[50px]">
       {/* header */}
       <header className="container mx-auto">
         <Navbar />

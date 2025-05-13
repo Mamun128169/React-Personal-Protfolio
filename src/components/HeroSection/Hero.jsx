@@ -11,7 +11,7 @@ const Hero = () => {
             className="rounded-lg shadow-2xl [width:180px] md:[width:240px]"
           />
           <div className="space-y-1 md:space-y-3 px-6">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.75]">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15]">
               <span className="text-gradient">I'm Alex Bennett, </span>
               frontend developer based in USA.
             </h1>

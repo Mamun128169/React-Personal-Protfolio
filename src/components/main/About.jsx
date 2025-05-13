@@ -26,7 +26,7 @@ const About = () => {
           <img className="rounded-xl w-full " src={profile} alt="profile-img" />
         </div>
         {/* right */}
-        <div className="space-y-10 px-5 md:px-2 basis-full md:basis-[50%] lg:basis-[70%] text-sm md:text-base font-medium">
+        <div className="space-y-10 px-2 md:px-3 basis-full md:basis-[50%] lg:basis-[70%] text-sm md:text-base font-medium">
           <div className="space-y-4">
             <p>
               I am an experienced Frontend Developer with over a decade of
@@ -40,21 +40,21 @@ const About = () => {
               bring to each project.
             </p>
           </div>
-          <div className="flex flex-col mt-[70px] space-y-3 text-lg">
+          <div className="flex flex-col mt-[70px] space-y-3 text-base md:text-lg">
             <div className="flex items-center">
-              <p className="min-w-[115px]"> HTML & CSS</p>
+              <p className="min-w-[105px] md:min-w-[115px]"> HTML & CSS</p>
               <hr className="progress-bar" style={{ width: "90%" }} />
             </div>
             <div className="flex items-center ">
-              <p className="min-w-[115px]"> React JS</p>
+              <p className="min-w-[105px] md:min-w-[115px]"> React JS</p>
               <hr className="progress-bar" style={{ width: "60%" }} />
             </div>
             <div className="flex items-center">
-              <p className="md:min-w-[115px]"> Javascript</p>
+              <p className="min-w-[105px] md:min-w-[115px]"> Javascript</p>
               <hr className="progress-bar" style={{ width: "70%" }} />
             </div>
             <div className="flex items-center">
-              <p className="md:min-w-[115px] "> Next JS</p>
+              <p className="min-w-[105px] md:min-w-[115px]"> Next JS</p>
               <hr className="progress-bar" style={{ width: "50%" }} />
             </div>
           </div>
