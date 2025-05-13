@@ -1,8 +1,9 @@
 import profile from "../../assets/profile_img.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
-    <div>
+    <div id="home">
       <div className="hero mt-12">
         <div className="hero-content flex-col text-center space-y-2 md:space-y-4">
           <img
@@ -20,9 +21,11 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex gap-8">
-            <button className="gradient-btn  border-2 border-transparent hover:border-2 hover:border-white transition-5">
-              Connect with me
-            </button>
+            <AnchorLink offset={"50"} href="#connect">
+              <button className="gradient-btn  border-2 border-transparent hover:border-2 hover:border-white transition-5">
+                Connect with me
+              </button>
+            </AnchorLink>
             <button className="text-sm md:text-base px-3 md:px-5 py-2 rounded-3xl font-semibold cursor-pointer border-2 hover:border-purple-700">
               My resume
             </button>

@@ -5,7 +5,7 @@ import location_icon from "../../assets/location_icon.svg";
 
 const Connect = () => {
   return (
-    <div className="mt-[100px] mb-[90px]">
+    <div className="mt-[100px] mb-[90px]" id="connect">
       {/*Get in touch title */}
       <div className="flex flex-col items-center relative">
         <img
@@ -25,7 +25,7 @@ const Connect = () => {
           <h2 className="text-5xl md:text-4xl lg:text-6xl font-semibold text-gradient">
             Let's Talk
           </h2>
-          <p className="text-base lg:text-lg font-medium">
+          <p className="text-base lg:text-lg font-light">
             I'm currently available to take on new projects, so feel free to
             send me a message about anything that you want me to work on. You
             can contact anytime.

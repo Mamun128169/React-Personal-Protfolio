@@ -3,7 +3,10 @@ import profile from "../../assets/about_profile.svg";
 
 const About = () => {
   return (
-    <div className="mt-[90px] md:mt-[100px] container mx-auto flex flex-col items-center px-3 md:px-8">
+    <div
+      id="about"
+      className="mt-[90px] md:mt-[100px] container mx-auto flex flex-col items-center px-3 md:px-8"
+    >
       {/* about title */}
       <div className="flex flex-col items-center relative">
         <img

@@ -4,7 +4,7 @@ import Work from "./work";
 const LatestWork = ({ works }) => {
   // console.log(works);
   return (
-    <div className="mt-[120px]">
+    <div className="mt-[120px]" id="latest">
       {/* latest work title */}
       <div className="flex flex-col items-center relative">
         <img

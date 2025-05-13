@@ -1,4 +1,5 @@
-import logo from '../../assets/logo.svg' // if logo is in src/assets/
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "../../assets/logo.svg"; // if logo is in src/assets/
 
 const Navbar = () => {
   return (
@@ -24,22 +25,33 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content lg:hidden  rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <AnchorLink href="#home">
+                  <a>Home</a>
+                </AnchorLink>
               </li>
               <li>
-                <a>About Me</a>
+                <AnchorLink offset={"50"} href="#about">
+                  <a>About me</a>
+                </AnchorLink>
               </li>
               <li>
-                <a>Services</a>
+                <AnchorLink offset={"50"} href="#services">
+                  <a>Services</a>
+                </AnchorLink>
               </li>
               <li>
-                <a>Portfolio</a>
+                <AnchorLink offset={"50"} href="#latest">
+                  <a>Latest works</a>
+                </AnchorLink>
               </li>
+
               <li>
-                <a>Contact</a>
+                <AnchorLink offset={"50"} href="#connect">
+                  <a>Contact</a>
+                </AnchorLink>
               </li>
             </ul>
           </div>
@@ -50,30 +62,43 @@ const Navbar = () => {
         <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <AnchorLink href="#home">
+                <a>Home</a>
+              </AnchorLink>
             </li>
             <li>
-              <a className="">About Me</a>
+              <AnchorLink offset={"50"} href="#about">
+                <a>About me</a>
+              </AnchorLink>
             </li>
             <li>
-              <a>Services</a>
+              <AnchorLink offset={"50"} href="#services">
+                <a>Services</a>
+              </AnchorLink>
             </li>
             <li>
-              <a>Portfolio</a>
+              <AnchorLink offset={"50"} href="#latest">
+                <a>Latest works</a>
+              </AnchorLink>
             </li>
+
             <li>
-              <a>Contact</a>
+              <AnchorLink offset={"50"} href="#connect">
+                <a>Contact</a>
+              </AnchorLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="gradient-btn hover:scale-105 transition-5">
-            Connect With Me
-          </a>
+          <AnchorLink offset={"50"} href="#connect">
+            <a className="gradient-btn hover:scale-105 transition-5">
+              Connect With Me
+            </a>
+          </AnchorLink>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

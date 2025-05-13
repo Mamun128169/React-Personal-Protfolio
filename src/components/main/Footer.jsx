@@ -3,7 +3,7 @@ import logo from "../../assets/logo.svg";
 const Footer = () => {
   return (
     <div className="mt-[120px] ">
-      <div className="flex flex-wrap items-center justify-between mb-5 gap-6 md:gap-2 px-3">
+      <div className="flex flex-wrap items-center justify-between mb-5 gap-6 md:gap-2 px-3 lg:px-5">
         {/* left side */}
         <div className=" basis-full md:basis-[45%]">
           <div>

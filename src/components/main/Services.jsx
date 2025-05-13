@@ -3,7 +3,7 @@ import Service from "./Service";
 
 const Services = ({ services }) => {
   return (
-    <div className="mt-[70px] space-y-20 mb-[60px]">
+    <div className="mt-[70px] space-y-20 mb-[60px]" id="services">
       {/* services title */}
       <div className="flex flex-col items-center relative">
         <img
