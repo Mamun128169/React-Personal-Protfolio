@@ -29,28 +29,28 @@ const Navbar = () => {
             >
               <li>
                 <AnchorLink href="#home">
-                  <a>Home</a>
+                  <p>Home</p>
                 </AnchorLink>
               </li>
               <li>
                 <AnchorLink offset={"50"} href="#about">
-                  <a>About me</a>
+                  <p>About me</p>
                 </AnchorLink>
               </li>
               <li>
                 <AnchorLink offset={"50"} href="#services">
-                  <a>Services</a>
+                  <p>Services</p>
                 </AnchorLink>
               </li>
               <li>
                 <AnchorLink offset={"50"} href="#latest">
-                  <a>Latest works</a>
+                  <p>Latest works</p>
                 </AnchorLink>
               </li>
 
               <li>
                 <AnchorLink offset={"50"} href="#connect">
-                  <a>Contact</a>
+                  <p>Contact</p>
                 </AnchorLink>
               </li>
             </ul>
@@ -63,37 +63,37 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             <li>
               <AnchorLink href="#home">
-                <a>Home</a>
+                <p>Home</p>
               </AnchorLink>
             </li>
             <li>
               <AnchorLink offset={"50"} href="#about">
-                <a>About me</a>
+                <p>About me</p>
               </AnchorLink>
             </li>
             <li>
               <AnchorLink offset={"50"} href="#services">
-                <a>Services</a>
+                <p>Services</p>
               </AnchorLink>
             </li>
             <li>
               <AnchorLink offset={"50"} href="#latest">
-                <a>Latest works</a>
+                <p>Latest works</p>
               </AnchorLink>
             </li>
 
             <li>
               <AnchorLink offset={"50"} href="#connect">
-                <a>Contact</a>
+                <p>Contact</p>
               </AnchorLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <AnchorLink offset={"50"} href="#connect">
-            <a className="gradient-btn hover:scale-105 transition-5">
+            <button className="gradient-btn hover:scale-105 transition-5">
               Connect With Me
-            </a>
+            </button>
           </AnchorLink>
         </div>
       </div>

@@ -2,8 +2,49 @@ import pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Connect = () => {
+  const access_key = "a844a83a-bad5-4e25-9666-ee83cf9fe852";
+
+  // handle form submit
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", access_key);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      toast.success("Message sent successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
+      // clear the form after 2 secs
+      setTimeout(() => {
+        event.target.reset();
+      }, 2000);
+    } else {
+      toast.error("Something went wrong. Please try again.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+    }
+  };
+
   return (
     <div className="mt-[100px] mb-[90px]" id="connect">
       {/*Get in touch title */}
@@ -47,7 +88,7 @@ const Connect = () => {
         </div>
         {/* right side */}
         <div className="basis-full md:basis-[50%]">
-          <form className="space-y-5" action="#">
+          <form className="space-y-5" onSubmit={onSubmit}>
             <div className="w-full">
               <label
                 htmlFor="name"
@@ -102,6 +143,7 @@ const Connect = () => {
               <button className="gradient-btn transition-5 hover:scale-105">
                 Submit now
               </button>
+              <ToastContainer />
             </div>
           </form>
         </div>
