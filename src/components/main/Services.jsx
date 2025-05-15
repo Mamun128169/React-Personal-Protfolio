@@ -1,9 +1,17 @@
 import pattern from "../../assets/theme_pattern.svg";
 import Service from "./Service";
+import { motion } from "motion/react";
 
 const Services = ({ services }) => {
   return (
-    <div className="mt-[70px] space-y-20 mb-[60px]" id="services">
+    <motion.div
+      id="services"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="mt-[70px] space-y-20 mb-[60px]"
+    >
       {/* services title */}
       <div className="flex flex-col items-center relative">
         <img
@@ -22,7 +30,7 @@ const Services = ({ services }) => {
           <Service key={idx} service={service}></Service>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

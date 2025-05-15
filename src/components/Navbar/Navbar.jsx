@@ -1,10 +1,16 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "../../assets/logo.svg"; // if logo is in src/assets/
+import { motion } from "motion/react";
 
 const Navbar = () => {
   return (
-    <nav className="container mx-auto">
-      <div className="navbar bg-transparent pt-5">
+    <motion.nav
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
+      className="container mx-auto"
+    >
+      <div className="navbar bg-[rgba(0, 0, 0, 0.5)] rounded-lg shadow-lg pt-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -55,7 +61,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-lg md:text-xl">
+          <a className="btn btn-ghost text-lg md:text-xl" href="/">
             <img src={logo} alt="logo.svg" />
           </a>
         </div>
@@ -91,13 +97,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <AnchorLink offset={"50"} href="#connect">
-            <button className="gradient-btn hover:scale-105 transition-5">
+            <motion.button
+              whileHover={{ scale: 1.08 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="gradient-btn"
+            >
               Connect With Me
-            </button>
+            </motion.button>
           </AnchorLink>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

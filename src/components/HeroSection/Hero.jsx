@@ -1,9 +1,16 @@
 import profile from "../../assets/profile_img.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <div id="home">
+    <motion.div
+      id="home"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
+    >
       <div className="hero mt-12">
         <div className="hero-content flex-col text-center space-y-2 md:space-y-4">
           <img
@@ -11,10 +18,21 @@ const Hero = () => {
             className="rounded-lg shadow-2xl [width:180px] md:[width:240px]"
           />
           <div className="space-y-1 md:space-y-3 px-6">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15]">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 3,
+                repeat: 2,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+              className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15]"
+            >
               <span className="text-gradient">I'm Alex Bennett, </span>
               frontend developer based in USA.
-            </h1>
+            </motion.h1>
             <p className="py-6 text-sm md:text-base lg:text-lg px-4 md:px-24 ">
               I am a frontend developer from California, USA with 10 years of
               experience in multiple companies like Microsoft, Tesla and Apple.
@@ -32,7 +50,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

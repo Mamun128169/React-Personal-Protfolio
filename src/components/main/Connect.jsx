@@ -4,6 +4,7 @@ import call_icon from "../../assets/call_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "motion/react";
 
 const Connect = () => {
   const access_key = "a844a83a-bad5-4e25-9666-ee83cf9fe852";
@@ -46,7 +47,14 @@ const Connect = () => {
   };
 
   return (
-    <div className="mt-[100px] mb-[90px]" id="connect">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="mt-[100px] mb-[90px]"
+      id="connect"
+    >
       {/*Get in touch title */}
       <div className="flex flex-col items-center relative">
         <img
@@ -140,15 +148,20 @@ const Connect = () => {
             </div>
             {/* submit button */}
             <div>
-              <button className="gradient-btn transition-5 hover:scale-105">
-                Submit now
-              </button>
+              <motion.button
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+                className="gradient-btn"
+              >
+                Subscribe
+              </motion.button>
               <ToastContainer />
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

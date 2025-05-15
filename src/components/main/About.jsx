@@ -1,10 +1,15 @@
 import pattern from "../../assets/theme_pattern.svg";
 import profile from "../../assets/about_profile.svg";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <div
+    <motion.div
       id="about"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
       className="mt-[90px] md:mt-[100px] container mx-auto flex flex-col items-center px-3 md:px-8"
     >
       {/* about title */}
@@ -76,7 +81,7 @@ const About = () => {
           <h4>Happy clients</h4>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

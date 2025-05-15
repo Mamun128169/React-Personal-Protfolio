@@ -1,10 +1,18 @@
 import pattern from "../../assets/theme_pattern.svg";
 import Work from "./work";
+import { motion } from "motion/react";
 
 const LatestWork = ({ works }) => {
   // console.log(works);
   return (
-    <div className="mt-[120px]" id="latest">
+    <motion.div
+      id="latest"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="mt-[120px]"
+    >
       {/* latest work title */}
       <div className="flex flex-col items-center relative">
         <img
@@ -28,7 +36,7 @@ const LatestWork = ({ works }) => {
           Show More <span> &rarr;</span>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
