@@ -36,7 +36,7 @@ const Hero = () => {
               }}
               className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15] "
             >
-              <span className="text-gradient">I'm Tanjil Hossain, </span>
+              <span className="text-gradient">I'm Tanzil Hossain, </span>
               professional digital marketer
             </motion.h1>
             <p className="py-6 text-sm md:text-base lg:text-lg px-4 md:px-24 ">

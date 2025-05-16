@@ -33,7 +33,7 @@ const Footer = () => {
             {/* social icons */}
 
             <p className="md:text-sm lg:text-base text-xs">
-              I’m Tanjil Hossain, an AI-powered, data-driven digital marketer
+              I’m Tanzil Hossain, an AI-powered, data-driven digital marketer
               based worldwide, helping businesses grow online.
             </p>
 

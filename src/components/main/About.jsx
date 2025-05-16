@@ -38,7 +38,7 @@ const About = () => {
         <div className="space-y-12 basis-full md:basis-[60%] lg:basis-[70%] text-sm md:text-base font-medium">
           <div className="space-y-4">
             <p>
-              I’m Tanjil Hossain — an AI-powered, data-driven Digital Marketer
+              I’m Tanzil Hossain — an AI-powered, data-driven Digital Marketer
               with 3 years of experience. I’ve worked with brands in Bangladesh
               and abroad, driving growth through effective Facebook & Google
               Ads, SEO, Email Marketing, and Web Analytics.
