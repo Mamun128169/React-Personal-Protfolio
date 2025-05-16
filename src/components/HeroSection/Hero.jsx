@@ -1,4 +1,4 @@
-import profile from "../../assets/profile_img.svg";
+import profile from "../../assets/Tanzilhossain.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "motion/react";
 
@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="hero-content flex-col text-center space-y-2 md:space-y-4">
           <img
             src={profile}
-            className="rounded-lg shadow-2xl [width:180px] md:[width:240px]"
+            className="shadow-2xl [width:180px] md:[width:240px] rounded-full"
           />
           <div className="space-y-1 md:space-y-3 px-6">
             <motion.h1
