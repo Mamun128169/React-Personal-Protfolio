@@ -82,7 +82,13 @@ const Hero = () => {
               </button>
             </AnchorLink>
             <button className="text-sm md:text-base px-3 md:px-5 py-2 rounded-3xl font-semibold cursor-pointer border-2 hover:border-purple-700">
-              My resume
+              <a
+                href="/Professional Minimalist CV Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                My resume
+              </a>
             </button>
           </div>
         </div>

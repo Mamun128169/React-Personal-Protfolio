@@ -10,7 +10,7 @@ const Connect = () => {
   const access_key =
     import.meta.env.VITE_WEB3FORM_ACCESS_KEY ||
     "9225e9ec-e066-43d4-8cfb-7dac8c1a57f5";
-  console.log("access key", access_key);
+  // console.log("access key", access_key);
 
   // handle form submit
   const onSubmit = async (event) => {
