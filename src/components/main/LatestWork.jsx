@@ -1,9 +1,15 @@
 import pattern from "../../assets/theme_pattern.svg";
-import Work from "./work";
+import Work from "./Work";
 import { motion } from "motion/react";
+import works_Data from "../../assets/mywork_data";
+import { useState } from "react";
 
-const LatestWork = ({ works }) => {
-  // console.log(works);
+const LatestWork = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  // Determine how many works to show
+  const visibleWorks = showAll ? works_Data : works_Data.slice(0, 6);
+
   return (
     <motion.div
       id="latest"
@@ -26,15 +32,20 @@ const LatestWork = ({ works }) => {
       </div>
       {/* works section */}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 items-center mt-[50px] gap-5 md:gap-8 lg:gap-12 px-2 md:px-5 lg:px-20">
-        {works.map((work, idx) => (
+        {visibleWorks.map((work, idx) => (
           <Work key={idx} work={work}></Work>
         ))}
       </div>
       {/* show more button */}
       <div className="mt-[60px] mb-[70px] flex justify-center">
-        <button className="text-xl px-4 py-3 rounded-3xl hover:scale-110 transition-5 cursor-pointer font-medium bg-gradient-custom">
-          Show More <span> &rarr;</span>
-        </button>
+        {!showAll && (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="text-xl px-4 py-3 rounded-3xl hover:scale-110 transition-5 cursor-pointer font-medium bg-gradient-custom"
+          >
+            Show More <span> &rarr;</span>
+          </button>
+        )}
       </div>
     </motion.div>
   );

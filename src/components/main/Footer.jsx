@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/Tanzilhossain.jpg";
 import { motion } from "motion/react";
 
 const Footer = () => {
@@ -13,11 +13,20 @@ const Footer = () => {
       <div className="flex flex-wrap items-center justify-between mb-5 gap-6 md:gap-2 px-3 lg:px-5">
         {/* left side */}
         <div className=" basis-full md:basis-[45%]">
-          <div>
-            <img src={logo} alt="logo-image" />
-            <p>
-              I am a frontend developer from, USA with 10 years of experience in
-              companies like Microsoft, Tesla and Apple.
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <img
+                className="w-[40px] h-[40px] rounded-full"
+                src={logo}
+                alt="logo-image"
+              />
+              <h2 className="uppercase text-lg md:text-xl lg:text-2xl">
+                Tanzil Hossain
+              </h2>
+            </div>
+            <p className="md:text-sm lg:text-base text-xs">
+              I’m Tanjil Hossain, an AI-powered, data-driven digital marketer
+              based worldwide, helping businesses grow online.
             </p>
           </div>
         </div>
@@ -43,7 +52,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="mt-4 apply-flex flex-wrap px-3 justify-between">
-        <h3>&copy; 2023 Alex Bennett. All rights reserved.</h3>
+        <h3>&copy; 2025 Tanzil Hossain. All rights reserved.</h3>
         <div className="apply-flex gap">
           <h4>Term of Services</h4>
           <h4>Privacy Policy</h4>

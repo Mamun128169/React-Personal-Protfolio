@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { motion } from "motion/react";
 
 const Connect = () => {
-  const access_key = "a844a83a-bad5-4e25-9666-ee83cf9fe852";
+  const access_key = import.meta.env.VITE_WEB3FORM_ACCESS_KEY;
 
   // handle form submit
   const onSubmit = async (event) => {
@@ -82,15 +82,15 @@ const Connect = () => {
           <div className="space-y-4 pt-4">
             <div className="apply-flex">
               <img className="w-6" src={mail_icon} alt="mail-icon" />
-              <h4>greatstackdev@gmail.com</h4>
+              <h4>Tanjildigital@gmail.com</h4>
             </div>
             <div className="apply-flex">
               <img className="w-6" src={call_icon} alt="call-icon" />
-              <h4>+772-825-524</h4>
+              <h4>+8801948873556</h4>
             </div>
             <div className="apply-flex">
               <img className="w-6" src={location_icon} alt="location-icon" />
-              <h4>CA, United States</h4>
+              <h4>Dhaka, Bangladesh</h4>
             </div>
           </div>
         </div>

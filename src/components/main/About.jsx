@@ -1,5 +1,5 @@
 import pattern from "../../assets/theme_pattern.svg";
-import profile from "../../assets/about_profile.svg";
+import profile from "../../assets/Tanzilhossain.jpg";
 import { motion } from "motion/react";
 
 const About = () => {
@@ -23,53 +23,84 @@ const About = () => {
           <span className="z-[100]">About me</span>
         </h2>
       </div>
-
-      {/* about content */}
-      <div className="mt-[50px] mb-[80px] flex justify-center gap-7 ">
-        {/* left */}
+      {/* About Section */}
+      <div className="mt-[50px] mb-[50px] flex flex-col md:flex-row justify-center gap-6 md:gap-10 px-4">
+        {/* Left - Profile Image */}
         <div className="md:basis-[40%] lg:basis-[25%] hidden md:block">
-          <img className="rounded-xl w-full " src={profile} alt="profile-img" />
+          <img
+            className="rounded-xl w-full h-auto object-cover"
+            src={profile}
+            alt="profile-img"
+          />
         </div>
-        {/* right */}
-        <div className="space-y-10 px-2 md:px-3 basis-full md:basis-[50%] lg:basis-[70%] text-sm md:text-base font-medium">
+
+        {/* Right - About Content */}
+        <div className="space-y-12 basis-full md:basis-[60%] lg:basis-[70%] text-sm md:text-base font-medium">
           <div className="space-y-4">
             <p>
-              I am an experienced Frontend Developer with over a decade of
-              professional expertise in the field. Throughout my career, I have
-              had the privilege of collaborating with prestigious organizations,
-              contributing to their success and growth.
+              I’m Tanjil Hossain — an AI-powered, data-driven Digital Marketer
+              with 3 years of experience. I’ve worked with brands in Bangladesh
+              and abroad, driving growth through effective Facebook & Google
+              Ads, SEO, Email Marketing, and Web Analytics.
             </p>
             <p>
-              My passion for frontend development is not only reflected in my
-              extensive experience but also in the enthusiasm and dedication I
-              bring to each project.
+              My passion for digital marketing is reflected in the results I
+              deliver and the strategic thinking I bring to every campaign. I'm
+              focused on measurable outcomes, blending creativity with data to
+              help brands grow smarter.
             </p>
           </div>
-          <div className="flex flex-col mt-[70px] space-y-3 text-base md:text-lg">
-            <div className="flex items-center">
-              <p className="min-w-[105px] md:min-w-[115px]"> HTML & CSS</p>
-              <hr className="progress-bar" style={{ width: "90%" }} />
-            </div>
-            <div className="flex items-center ">
-              <p className="min-w-[105px] md:min-w-[115px]"> React JS</p>
-              <hr className="progress-bar" style={{ width: "60%" }} />
-            </div>
-            <div className="flex items-center">
-              <p className="min-w-[105px] md:min-w-[115px]"> Javascript</p>
-              <hr className="progress-bar" style={{ width: "70%" }} />
-            </div>
-            <div className="flex items-center">
-              <p className="min-w-[105px] md:min-w-[115px]"> Next JS</p>
-              <hr className="progress-bar" style={{ width: "50%" }} />
-            </div>
+          {/* skills section on large device */}
+          <div className="space-y-4 w-full mb-12 hidden lg:block">
+            {[
+              { label: "Facebook Marketing", width: "67%" },
+              { label: "Google Marketing", width: "70%" },
+              { label: "Web Analytics", width: "65%" },
+              { label: "SEO", width: "55%" },
+              { label: "Social Media Marketing", width: "75%" },
+            ].map((skill, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-2 md:gap-5 lg:gap-8"
+              >
+                <p className="min-w-[110px] md:min-w-[185px] text-xs md:text-lg">
+                  {skill.label}
+                </p>
+                <hr
+                  className="h-2 rounded-full bg-gradient-to-r from-orange-500 to-purple-700 border-none"
+                  style={{ width: skill.width }}
+                />
+              </div>
+            ))}
           </div>
         </div>
+      </div>
+
+      {/* Skills Section */}
+      <div className="space-y-4 px-4 w-full mb-12 lg:hidden">
+        {[
+          { label: "Facebook Marketing", width: "67%" },
+          { label: "Google Marketing", width: "70%" },
+          { label: "Web Analytics", width: "65%" },
+          { label: "SEO", width: "55%" },
+          { label: "Social Media Marketing", width: "75%" },
+        ].map((skill, idx) => (
+          <div key={idx} className="flex items-center gap-2 md:gap-5 lg:gap-8">
+            <p className="min-w-[110px] md:min-w-[185px] text-xs md:text-lg">
+              {skill.label}
+            </p>
+            <hr
+              className="h-2 rounded-full bg-gradient-to-r from-orange-500 to-purple-700 border-none"
+              style={{ width: skill.width }}
+            />
+          </div>
+        ))}
       </div>
 
       {/* works */}
       <div className="flex items-center gap-8 md:gap-24 lg:gap-48 text-center mb-[50px] uppercase text-base md:xl lg:2xl font-bold">
         <div className="flex flex-col space-y-3">
-          <h2 className="text-2xl md:text-4xl text-gradient font-bold">10+</h2>
+          <h2 className="text-2xl md:text-4xl text-gradient font-bold">3+</h2>
           <h4>years of experience</h4>
         </div>
         <div className="flex flex-col space-y-3">
@@ -77,7 +108,7 @@ const About = () => {
           <h4>projects completed</h4>
         </div>
         <div className="flex flex-col space-y-3">
-          <h2 className="text-2xl md:text-4xl text-gradient font-bold">15+</h2>
+          <h2 className="text-2xl md:text-4xl text-gradient font-bold">25+</h2>
           <h4>Happy clients</h4>
         </div>
       </div>

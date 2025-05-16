@@ -1,8 +1,9 @@
 import pattern from "../../assets/theme_pattern.svg";
 import Service from "./Service";
 import { motion } from "motion/react";
+import Services_Data from "../../assets/services_data";
 
-const Services = ({ services }) => {
+const Services = ({}) => {
   return (
     <motion.div
       id="services"
@@ -26,7 +27,7 @@ const Services = ({ services }) => {
 
       {/* services section */}
       <div className="grid grid-cols-2 gap-2 px-2 md:grid-cols-3 md:gap-10 md:px-4 lg:px-24">
-        {services.map((service, idx) => (
+        {Services_Data.map((service, idx) => (
           <Service key={idx} service={service}></Service>
         ))}
       </div>

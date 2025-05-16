@@ -1,5 +1,5 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import logo from "../../assets/logo.svg"; // if logo is in src/assets/
+import profile from "../../assets/Tanzilhossain.jpg";
 import { motion } from "motion/react";
 
 const Navbar = () => {
@@ -62,7 +62,13 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-lg md:text-xl" href="/">
-            <img src={logo} alt="logo.svg" />
+            <div className="p-[2px] rounded-full bg-[conic-gradient(at_top_right,_#ea580c,_#6b21a8)]">
+              <img
+                className="w-[35px] h-[35px] rounded-full"
+                src={profile}
+                alt="logo.svg"
+              />
+            </div>
           </a>
         </div>
         <div className="navbar-center hidden md:flex">

@@ -6,9 +6,6 @@ const Service = ({ service }) => {
       <h2 className="text-lg md:text-xl font-semibold">{s_no}</h2>
       <h3 className="text-xl md:text-2xl font-bold text-gradient">{s_name}</h3>
       <p className="text-base font-medium">{s_desc}</p>
-      <button className="flex items-center gap-2 text-xl font-medium">
-        Read More <span className="text-2xl font-bold">&rarr;</span>
-      </button>
     </div>
   );
 };

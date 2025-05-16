@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="hero-content flex-col text-center space-y-2 md:space-y-4">
           <img
             src={profile}
-            className="shadow-2xl [width:180px] md:[width:240px] rounded-full"
+            className="rounded-lg shadow-2xl [width:180px] md:[width:240px]"
           />
           <div className="space-y-1 md:space-y-3 px-6">
             <motion.h1
@@ -28,14 +28,14 @@ const Hero = () => {
                 repeatType: "loop",
                 ease: "easeInOut",
               }}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15]"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold md:leading-[1.15] "
             >
-              <span className="text-gradient">I'm Alex Bennett, </span>
-              frontend developer based in USA.
+              <span className="text-gradient">I'm Tanjil Hossain, </span>
+              professional digital marketer
             </motion.h1>
             <p className="py-6 text-sm md:text-base lg:text-lg px-4 md:px-24 ">
-              I am a frontend developer from California, USA with 10 years of
-              experience in multiple companies like Microsoft, Tesla and Apple.
+              I’m an AI-powered, data-driven digital marketer based worldwide,
+              helping businesses grow online.
             </p>
           </div>
           <div className="flex gap-8">
