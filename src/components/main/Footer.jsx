@@ -1,6 +1,12 @@
 import logo from "../../assets/Tanzilhossain.jpg";
 import { motion } from "motion/react";
 
+// import icons
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <motion.div
@@ -24,10 +30,44 @@ const Footer = () => {
                 Tanzil Hossain
               </h2>
             </div>
+            {/* social icons */}
+
             <p className="md:text-sm lg:text-base text-xs">
               I’m Tanjil Hossain, an AI-powered, data-driven digital marketer
               based worldwide, helping businesses grow online.
             </p>
+
+            {/* social icons */}
+            <div className="flex justify-start gap-2 md:gap-6 lg:gap10 overflow-hidden">
+              <a
+                href="https://www.facebook.com/MdTanjilHossaiin/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mdtanjilhossaiin/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a
+                href="https://x.com/mdtanjilhosain"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitterSquare className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a
+                href="https://www.instagram.com/mdtanjilhossaiin/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagramSquare className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+            </div>
           </div>
         </div>
         {/* right side */}
