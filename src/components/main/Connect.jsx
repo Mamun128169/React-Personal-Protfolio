@@ -58,7 +58,7 @@ const Connect = () => {
   return (
     <motion.div
       id="connect"
-      className="py-20 max-w-7xl mx-auto"
+      className="mt-[120px] max-w-7xl mx-auto"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
