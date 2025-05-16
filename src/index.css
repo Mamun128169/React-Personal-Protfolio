@@ -60,7 +60,7 @@ body {
   }
 
   .gradient-btn {
-    @apply bg-gradient-custom text-sm md:text-base px-3 md:px-6 py-2 rounded-3xl font-semibold cursor-pointer;
+    @apply bg-gradient-custom text-sm md:text-base px-2 md:px-6 py-2 rounded-3xl font-semibold cursor-pointer;
   }
 
   .text-gradient {
