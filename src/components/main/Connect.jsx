@@ -7,7 +7,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { motion } from "motion/react";
 
 const Connect = () => {
-  const access_key = import.meta.env.VITE_WEB3FORM_ACCESS_KEY;
+  const access_key =
+    import.meta.env.VITE_WEB3FORM_ACCESS_KEY ||
+    "9225e9ec-e066-43d4-8cfb-7dac8c1a57f5";
+  console.log("access key", access_key);
 
   // handle form submit
   const onSubmit = async (event) => {
@@ -39,6 +42,7 @@ const Connect = () => {
         event.target.reset();
       }, 2000);
     } else {
+      console.log(res);
       toast.error("Something went wrong. Please try again.", {
         position: "top-right",
         autoClose: 3000,
