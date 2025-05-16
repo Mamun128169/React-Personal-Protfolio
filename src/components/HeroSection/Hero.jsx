@@ -2,6 +2,12 @@ import profile from "../../assets/Tanzilhossain.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "motion/react";
 
+// import icons
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
 const Hero = () => {
   return (
     <motion.div
@@ -12,12 +18,12 @@ const Hero = () => {
       transition={{ duration: 0.9, ease: "easeOut" }}
     >
       <div className="hero mt-12">
-        <div className="hero-content flex-col text-center space-y-2 md:space-y-4">
+        <div className="hero-content flex-col text-center space-y-3 md:space-y-6">
           <img
             src={profile}
-            className="rounded-lg shadow-2xl [width:180px] md:[width:240px]"
+            className="rounded-full shadow-2xl [width:180px] md:[width:240px]"
           />
-          <div className="space-y-1 md:space-y-3 px-6">
+          <div className="space-y-2 md:space-y-3 px-6">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1 }}
@@ -37,6 +43,21 @@ const Hero = () => {
               I’m an AI-powered, data-driven digital marketer based worldwide,
               helping businesses grow online.
             </p>
+            {/* social icons */}
+            <div className="flex justify-center gap-2 md:gap-6 lg:gap10 overflow-hidden">
+              <a href="#">
+                <FaFacebook className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a href="#">
+                <FaLinkedin className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a href="#">
+                <FaTwitterSquare className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+              <a href="#">
+                <FaInstagramSquare className="text-5xl hover:bg-gradient-to-r from-orange-900 to-purple-900 px-2 py-1 rounded-lg cursor-pointer" />
+              </a>
+            </div>
           </div>
           <div className="flex gap-8">
             <AnchorLink offset={"50"} href="#connect">
