@@ -56,7 +56,6 @@ const About = () => {
               { label: "Facebook Marketing", width: "67%" },
               { label: "Google Marketing", width: "70%" },
               { label: "Web Analytics", width: "65%" },
-              { label: "SEO", width: "55%" },
               { label: "Social Media Marketing", width: "75%" },
             ].map((skill, idx) => (
               <div
@@ -82,7 +81,6 @@ const About = () => {
           { label: "Facebook Marketing", width: "67%" },
           { label: "Google Marketing", width: "70%" },
           { label: "Web Analytics", width: "65%" },
-          { label: "SEO", width: "55%" },
           { label: "Social Media Marketing", width: "75%" },
         ].map((skill, idx) => (
           <div key={idx} className="flex items-center gap-2 md:gap-5 lg:gap-8">
