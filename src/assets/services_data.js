@@ -24,12 +24,6 @@ const Services_Data = [
       "Track user behavior and campaign performance using Google Tag Manager and GA4 to guide data-driven decisions and boost conversions.",
   },
   {
-    s_no: "05",
-    s_name: "SEO",
-    s_desc:
-      "Improve your website's visibility through advanced on-page, off-page, and technical SEO to drive organic traffic and rankings.",
-  },
-  {
     s_no: "06",
     s_name: "Email Marketing",
     s_desc:

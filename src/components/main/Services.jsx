@@ -26,7 +26,7 @@ const Services = ({}) => {
       </div>
 
       {/* services section */}
-      <div className="grid grid-cols-2 gap-2 px-2 md:grid-cols-3 md:gap-10 md:px-4 lg:px-24">
+      <div className="grid grid-cols-2 content-center gap-2 px-2 md:grid-cols-3 md:gap-10 md:px-4 lg:px-24">
         {Services_Data.map((service, idx) => (
           <Service key={idx} service={service}></Service>
         ))}
